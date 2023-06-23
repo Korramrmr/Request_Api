@@ -1,0 +1,35 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    background: #f4fdfa;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons-container {
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 15px;
+}
+
+.buttons-container__title {
+    text-transform: uppercase;
+}
+
+.buttons-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 25px;
+    margin-top: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 250px;
+}

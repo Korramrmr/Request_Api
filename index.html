@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Test work with API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="buttons-container">
+      <h2 class="buttons-container__title">Проекты</h2>
+      <div class="buttons-box">
+        <button type="button" id="createProjectXML">Создать с XML</button>
+        <button type="button" id="createProjectFetch">Создать с Fetch</button>
+        <button type="button" id="createProjectAxios">Создать с Axios</button>
+      </div>
+      <div class="buttons-box">
+        <button type="button" id="getProjectXML">Получить с XML</button>
+        <button type="button" id="getProjectFetch">Получить с Fetch</button>
+        <button type="button" id="getProjectAxios">Получить с Axios</button>
+      </div>
+      <div class="buttons-box">
+        <button type="button" id="editProjectXML">Редактировать с XML</button>
+        <button type="button" id="editProjectFetch">Редактировать с Fetch</button>
+        <button type="button" id="editProjectAxios">Редактировать с Axios</button>
+      </div>
+      <div class="buttons-box">
+        <button type="button" id="deleteProjectXML">Удалить с XML</button>
+        <button type="button" id="deleteProjectFetch">Удалить с Fetch</button>
+        <button type="button" id="deleteProjectAxios">Удалить с Axios</button>
+      </div>
+    </div>
+    <div class="buttons-container">
+      <h2 class="buttons-container__title">Задачи</h2>
+      <div class="buttons-box">
+        <button type="button" id="createTaskXML">Создать с XML</button>
+        <button type="button" id="createTaskFetch">Создать с Fetch</button>
+        <button type="button" id="createTaskAxios">Создать с Axios</button>
+      </div>
+      <div class="buttons-box">
+        <button type="button" id="getTaskXML">Получить с XML</button>
+        <button type="button" id="getTaskFetch">Получить с Fetch</button>
+        <button type="button" id="getTaskAxios">Получить с Axios</button>
+      </div>
+      <div class="buttons-box">
+        <button type="button" id="editTaskXML">Редактировать с XML</button>
+        <button type="button" id="editTaskFetch">Редактировать с Fetch</button>
+        <button type="button" id="editTaskAxios">Редактировать с Axios</button>
+      </div>
+      <div class="buttons-box">
+        <button type="button" id="deleteTaskXML">Удалить с XML</button>
+        <button type="button" id="deleteTaskFetch">Удалить с Fetch</button>
+        <button type="button" id="deleteTaskAxios">Удалить с Axios</button>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
