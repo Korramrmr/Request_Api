@@ -57,7 +57,7 @@ addClickListener('getProjectXML', () => {
 
 export function editXMLProject({ id, name }) {
     const xhr = new XMLHttpRequest();
-    xhr.open("PUT", `${apiUrl}/projects/${id}`);
+    xhr.open("PUT", `${apiUrl}/projects/`);
     xhr.responseType = "json";
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("Authorization", `Bearer ${token}`);
@@ -72,7 +72,12 @@ export function editXMLProject({ id, name }) {
             console.log(errorDetected, error);
         }
     };
-    xhr.send(JSON.stringify({ name }));
+    xhr.send(
+        JSON.stringify({
+            _id: id,
+            name,
+        })
+    );
 }
 
 addClickListener('editProjectXML', () => {
@@ -151,10 +156,13 @@ addClickListener("getProjectFetch", () => {
 });
 
 export function editFetchProject({ id, name }) {
-    fetch(`${apiUrl}/projects/${id}`, {
+    fetch(`${apiUrl}/projects/`, {
         method: "PUT",
         headers,
-        body: JSON.stringify({ name }),
+        body: JSON.stringify({ 
+            _id: id,
+            name, 
+        }),
     })
         .then((response) => {
             if (!response.ok) {
@@ -165,6 +173,7 @@ export function editFetchProject({ id, name }) {
         .then((data) => console.log(data))
         .catch((error) => console.log(errorDetected, error));
 }
+
 
 addClickListener("editProjectFetch", () => {
     editFetchProject({

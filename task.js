@@ -239,7 +239,7 @@ addClickListener('getTaskAxios', () => {
     getAxiosTaskById(localStorage.getItem('taskId'));
 });
 
-export function editxiosTask({ id, name }) {
+export function editAxiosTask({ id, name }) {
     axios
         .put(
             `${apiUrl}/tasks`,
